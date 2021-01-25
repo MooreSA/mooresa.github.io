@@ -1,35 +1,77 @@
 .projects {
     // want this to grow more than the about section
-    // flex: 2 1 auto;
+    flex: 2 1 auto;
 
-    // width: auto;
+    width: 80%;
+    max-width: 1000px;
+
     @include flex-item(column, nowrap);
     align-items: center;
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
 
+    margin-top: 10px;
     border-radius: 10px;
 
     &__header {
-        // todo?
+        font-size: $font-size * 2;
     }
 
     &__content {
-        padding: 10px;
+        padding: 20px 10px;
         width: 100%;
         @include flex-item(row, wrap);
         justify-content: space-around;
 
-        background-color: $bg-1-color;
+        background-color: $bg-dark-color;
         border-radius: 5px;
     }
 
-    &__card {
-        width: 125px;
-        text-align: center;
-        height: 150px;
-        border: 1px solid black;
+    &__link {
+
+        display: grid;
+        grid-template-rows: 30% 70%;
+        background-color: $bg-base;
+
+        width: 200px;
+        height: 300px;
         margin: 10px 5px;
+
+        border-radius: 10px;
+
+        text-align: center;
+        text-decoration: none;
+
+        &:visited {
+            color: #000;
+        }
+
+        &:link {
+            color: #000;
+        }
+    }
+
+    &__card {
+        width: 100%;
+
+        &--upper {
+            flex: 3 1 auto;
+            border-bottom: 1px solid black;
+            padding-top: 30px;
+
+            font-size: $font-size * 1.5;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &--lower {
+            flex: 7 1 auto;
+            margin: auto;
+            padding: 0px 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

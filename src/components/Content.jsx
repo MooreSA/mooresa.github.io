@@ -6,18 +6,22 @@ const Content = () => {
     {
       name: 'Two Doo',
       url: 'https://mooresa.github.io/two-doo',
+      description: 'App where users can create multiple projects to save todo lists',
     },
     {
       name: 'BattleShip',
       url: 'https://mooresa.github.io/battleship',
+      description: 'Play against a computer in the classic game BattleShip',
     },
     {
       name: 'CV Builder',
       url: 'https://mooresa.github.io/cv-builder',
+      description: 'Create your own resume by filling in the CV-builder',
     },
     {
       name: 'Memory Cards',
       url: 'https://mooresa.github.io/odin-memory-card',
+      description: 'Test your memory by clicking on the cards. See if you can get them all',
     },
   ];
 

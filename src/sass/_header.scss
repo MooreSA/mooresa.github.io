@@ -1,11 +1,13 @@
 .header {
     @include flex-item(row, nowrap);
 
-    padding: 15px;
+    padding: 25px;
+    border-bottom: 1px solid mix($bg-dark-color, $bg-base);
 
-    background-color: $bg-2-color;
-    color: #000;
-    border-bottom: 1px solid mix($bg-0-color, $bg-1-color);
+    font-size: $font-size * 1.5;
+
+    background-color: $bg-dark-color;
+    color: $font-color-dark;
 
     &__content {
         // make this the majority of the header
@@ -13,7 +15,8 @@
         flex: 2 1 auto;
 
         // because you're important :) 
-        font-size: $font-size * 2;
+        font-size: $font-size * 2.5;
+        font-weight: 500;
     }
 
     &__nav {
@@ -23,7 +26,7 @@
     }
 
     &__link {
-        // todo
+        margin: auto 5px;
     }
 
     &__img {
