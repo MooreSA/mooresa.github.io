@@ -1,0 +1,8 @@
+.content {
+    height: 100%;
+    padding: 20px;
+    @include flex-item(column, nowrap);
+
+    align-items: center;
+    justify-content: center;
+}

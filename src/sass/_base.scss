@@ -1,0 +1,40 @@
+
+// This mixin prefixes for backwards compatibility
+// and will set the flex-flow for me
+@mixin flex-item($direction, $wrap) {
+    display: -webkit-box;
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;
+
+    flex-flow: $direction $wrap;
+}
+
+// setting up variables for the page
+
+$font-size: 14px;
+$font-color-light: #93A8AC;
+$font-color-dark: #424B54;
+
+
+$bg-0-color: #E2B4BD;
+$bg-1-color: #DBA2AD;
+$bg-2-color: #93A8AC;
+$bg-3-color: #424B54;
+
+// Need this for the page grid to work
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    background-color: $bg-0-color;
+}
+
+// Set up CSS to be logical.
+// Somehow these are NOT default
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

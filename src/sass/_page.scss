@@ -1,0 +1,8 @@
+.page {
+    height: 100%;
+    display: grid;
+    // rows are
+    // header, content, footer
+    // super simple :)
+    grid-template-rows: auto 1fr auto;
+}
