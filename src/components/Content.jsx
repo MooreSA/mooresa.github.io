@@ -10,7 +10,7 @@ const Content = () => {
     },
     {
       name: 'BattleShip',
-      url: 'https://mooresa.github.io/battleship',
+      url: 'https://mooresa.github.io/odin-battleship',
       description: 'Play against a computer in the classic game BattleShip',
     },
     {
@@ -39,7 +39,7 @@ const Content = () => {
         </div>
       </article>
       <section className="projects">
-        <h2 className="projects__header">Projects</h2>
+        <h2 className="projects__header">My Work.</h2>
         <div className="projects__content">
           { projects.map((project) => <ProjectCard projectInfo={project} key={project.name} />) }
         </div>
