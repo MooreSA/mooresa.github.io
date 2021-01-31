@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
-const Content = () => {
+const Home = () => {
   const projects = [
     {
       name: 'Two Doo',
@@ -26,15 +26,15 @@ const Content = () => {
   ];
 
   return (
-    <div className="content">
-      <article className="about">
-        <h2 className="about__header">Me.</h2>
-        <div className="about__content">
-          <div className="about__paragraph">
+    <div className="home">
+      <article className="intro">
+        <h2 className="intro__header">Me.</h2>
+        <div className="intro__content">
+          <div className="intro__paragraph">
             First Year IT Web Development Student at Nova Scotia&apos;s Truro Campus.
           </div>
-          <div className="about__paragraph">
-            Learning new skills and technologies. Absorbing as much information along the way.
+          <div className="intro__paragraph">
+            Eager to apply the skills that I possess while developing more.
           </div>
         </div>
       </article>
@@ -48,4 +48,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Home;

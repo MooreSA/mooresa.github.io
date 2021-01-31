@@ -1,0 +1,21 @@
+.contact {
+    flex: 0 1 auto;
+    margin: auto;
+
+    &__header {
+        font-size: $font-size * 1.75;
+    }
+
+    &__content {
+        @include flex-item(column, nowrap);
+        justify-content: center;
+    }
+
+    &__link {
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }    
+}

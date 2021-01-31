@@ -17,6 +17,11 @@
         // because you're important :) 
         font-size: $font-size * 2.5;
         font-weight: 500;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__nav {
@@ -26,11 +31,15 @@
     }
 
     &__link {
+        text-decoration: none;
         margin: auto 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
-    &__img {
-        width: 30px;
-        height: auto;
+    &__icon {
+        font-size: $font-size * 2.25;
     }
 }

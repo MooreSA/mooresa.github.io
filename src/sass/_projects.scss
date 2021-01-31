@@ -55,6 +55,9 @@
         &--upper {
             flex: 3 1 auto;
             border-bottom: 1px solid black;
+            // border-bottom: 0;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
             padding-top: 30px;
 
             font-size: $font-size * 1.5;

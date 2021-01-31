@@ -1,0 +1,36 @@
+.skills {
+    max-width: 1000px;
+    margin: auto;
+
+    &__header {
+        text-align: center;
+        font-size: $font-size * 2;
+    }
+
+    &__content {
+        @include flex-item(row, wrap);
+        justify-content: center;
+    }
+
+    &__group {
+        margin: 20px;
+        border: 1px solid $bg-dark-color;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    &__subheader {
+        font-size: $font-size * 1.25;
+    }
+
+    &__list {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+}

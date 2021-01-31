@@ -1,0 +1,25 @@
+.what {
+    background-color: $bg-emphasis-color;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+
+    &__header {
+        font-size: $font-size * 2;
+        text-align: center;
+    }
+
+    &__content {
+        @include flex-item(row, nowrap);
+        align-items: center;
+    }
+
+    &__img {
+        width: 250px;
+        border-radius: 125px;
+    }
+
+    &__para {
+        margin-left: 10px;
+    }
+}
