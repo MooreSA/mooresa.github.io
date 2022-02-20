@@ -1,45 +1,48 @@
 .header {
+  @include flex-item(row, nowrap);
+
+  align-items: stretch;
+
+  padding: 25px;
+  border-bottom: 1px solid mix($bg-dark-color, $bg-base);
+
+  font-size: $font-size * 1.5;
+
+  background-color: $bg-dark-color;
+  color: $font-color-light;
+
+  &__content {
+    // make this the majority of the header
+    height: 100%;
+    flex: 2 1 auto;
+
+    // because you're important :)
+    font-size: $font-size * 2.5;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__nav {
+    flex-grow: 1;
     @include flex-item(row, nowrap);
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-    padding: 25px;
-    border-bottom: 1px solid mix($bg-dark-color, $bg-base);
+  &__link {
+    text-decoration: none;
+    margin: auto 5px;
 
-    font-size: $font-size * 1.5;
-
-    background-color: $bg-dark-color;
-    color: $font-color-dark;
-
-    &__content {
-        // make this the majority of the header
-        height: 100%;
-        flex: 2 1 auto;
-
-        // because you're important :) 
-        font-size: $font-size * 2.5;
-        font-weight: 500;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
+    &:hover {
+      text-decoration: underline;
     }
+  }
 
-    &__nav {
-        height: 100%;
-        @include flex-item(row, nowrap);
-        align-items: center;
-    }
-
-    &__link {
-        text-decoration: none;
-        margin: auto 5px;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    &__icon {
-        font-size: $font-size * 2.25;
-    }
+  &__icon {
+    font-size: $font-size * 2.25;
+  }
 }

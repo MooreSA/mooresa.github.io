@@ -1,56 +1,58 @@
 @font-face {
-    font-family: 'Nunito';
-    src: url('../lib/fonts/NunitoSans-Regular.ttf') format("truetype")
+  font-family: "Nunito";
+  src: url("../lib/fonts/NunitoSans-Regular.ttf") format("truetype");
 }
 
 // This mixin prefixes for backwards compatibility
 // and will set the flex-flow for me
 @mixin flex-item($direction, $wrap) {
-    display: -webkit-box;
-    display: -ms-flexbox;  
-    display: -webkit-flex; 
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 
-    flex-flow: $direction $wrap;
+  flex-flow: $direction $wrap;
 }
 
 // setting up variables for the page
 
-$primary-font-fam: 'Nunito', sans-serif;
+$primary-font-fam: "Nunito", sans-serif;
 $font-size: 14px;
-$font-color-light: #FFF;
+$font-color-light: #fff;
 $font-color-dark: #000;
 
-$bg-base: #E7E1DA;
-$bg-dark-color: #546A76;
-$bg-light-color: #88A0A8;
-$bg-emphasis-color: #EEE5AA; 
+$bg-base: #fff;
+$bg-dark-color: #45062e;
+$bg-light-color: #e5a4cb;
+$bg-emphasis-color: #e5a4cb;
 
 // $TEST: #EEE5AA;
 
 // Need this for the page grid to work
-html, body, #root {
-    height: 100%;
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
-    // background-image: url('../lib/bg-tile.png');
-    background-color: $bg-base;
+  // background-image: url('../lib/bg-tile.png');
+  background-color: $bg-base;
 }
 
 // Set up CSS to be logical.
 // Somehow these are NOT default
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: $primary-font-fam;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $primary-font-fam;
 }
 
 a:visited {
-    color: #000;
+  color: inherit;
 }
 
 a:link {
-    color: #000;
+  color: inherit;
 }

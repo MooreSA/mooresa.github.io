@@ -12,8 +12,9 @@ const About = () => {
           <img className="what__img" src={imgsrc} alt="Seamus Moore" />
           <div className="what__para">
             Second IT Web Development at NSCC. I am flexible, self-motivated
-            looking for an innovating outlet for my creativity. Looking forward
-            to working with a team to create something new.
+            looking for an innovating outlet for my creativity. I have
+            experience in SEO, sales, project management, and customer service.
+            Capable of working in a team environment as well as independently.
           </div>
         </div>
       </div>

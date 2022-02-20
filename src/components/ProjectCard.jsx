@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
+/* eslint-disable quotes */
+import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
 
 const ProjectCard = (props) => {
   // eslint-disable-next-line no-unused-vars
@@ -9,8 +10,8 @@ const ProjectCard = (props) => {
 
   const { scaleFactor } = useSpring({ scaleFactor: active ? 1.05 : 1 });
   const testProps = useSpring({
-    from: { background: '#88A0A8' },
-    to: { background: active ? '#EEE5AA' : '#88A0A8' },
+    from: { background: "#45062e", color: "#000" },
+    to: { background: active ? "#45062e" : "#45062e", color: "#fff" },
   });
 
   return (
@@ -23,7 +24,12 @@ const ProjectCard = (props) => {
         transform: scaleFactor.interpolate((factor) => `scale(${factor})`),
       }}
     >
-      <animated.div className="projects__card projects__card--upper" style={testProps}>{name}</animated.div>
+      <animated.div
+        className="projects__card projects__card--upper"
+        style={testProps}
+      >
+        {name}
+      </animated.div>
       <div className="projects__card projects__card--lower">{description}</div>
     </animated.a>
   );

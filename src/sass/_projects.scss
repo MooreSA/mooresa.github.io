@@ -1,80 +1,78 @@
 .projects {
-    // want this to grow more than the about section
-    flex: 2 1 auto;
+  // want this to grow more than the about section
+  flex: 2 1 auto;
 
-    width: 80%;
-    max-width: 1000px;
+  width: 80%;
+  max-width: 1000px;
 
-    @include flex-item(column, nowrap);
-    align-items: center;
+  @include flex-item(column, nowrap);
+  align-items: center;
 
-    margin-top: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+
+  &__header {
+    font-size: $font-size * 2;
+  }
+
+  &__content {
+    padding: 20px 10px;
+    width: 100%;
+    @include flex-item(row, wrap);
+    justify-content: space-around;
+    border-radius: 5px;
+  }
+
+  &__link {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    background-color: $bg-base;
+    border: 1px solid $bg-dark-color;
+
+    width: 200px;
+    height: 300px;
+    margin: 10px 5px;
+
     border-radius: 10px;
 
-    &__header {
-        font-size: $font-size * 2;
+    text-align: center;
+    text-decoration: none;
+
+    &:visited {
+      color: #000;
     }
 
-    &__content {
-        padding: 20px 10px;
-        width: 100%;
-        @include flex-item(row, wrap);
-        justify-content: space-around;
-
-        background-color: $bg-dark-color;
-        border-radius: 5px;
+    &:link {
+      color: #000;
     }
+  }
 
-    &__link {
+  &__card {
+    width: 100%;
 
-        display: grid;
-        grid-template-rows: 30% 70%;
-        background-color: $bg-base;
+    &--upper {
+      flex: 3 1 auto;
+      border-bottom: 1px solid black;
+      // border-bottom: 0;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      padding-top: 30px;
 
-        width: 200px;
-        height: 300px;
-        margin: 10px 5px;
+      font-size: $font-size * 1.5;
+      font-weight: bold;
 
-        border-radius: 10px;
-
-        text-align: center;
-        text-decoration: none;
-
-        &:visited {
-            color: #000;
-        }
-
-        &:link {
-            color: #000;
-        }
+      &:hover {
+        text-decoration: underline;
+      }
     }
+    &--lower {
+      flex: 7 1 auto;
+      margin: auto;
+      padding: 0px 10px;
 
-    &__card {
-        width: 100%;
-
-        &--upper {
-            flex: 3 1 auto;
-            border-bottom: 1px solid black;
-            // border-bottom: 0;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-            padding-top: 30px;
-
-            font-size: $font-size * 1.5;
-            font-weight: bold;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-        &--lower {
-            flex: 7 1 auto;
-            margin: auto;
-            padding: 0px 10px;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
 }
